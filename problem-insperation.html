@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- meta data -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem</title>
+  <meta name="description" content="Shadow-Shark: Predicting shark habitats from space using NASA satellite data and machine learning. Built for NASA Space Apps Hackathon.">
+  <meta name="keywords" content="NASA, Space Apps, Sharks, Machine Learning, Heatmap, Ocean, Shadow-Shark">
+  <meta name="author" content="Team Shadow Brokers">
+  <meta property="og:title" content="Shadow-Shark | NASA Space Apps Hackathon">
+  <meta property="og:description" content="Predicting shark habitats with NASA data.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/logos/only-logo.webp"> 
+  <meta property="og:url" content="https://your-site-link.com">
+
+<!-- tab logo -->
+  <link rel="icon" type="image/png" href="./assets/images/logos/only-logo.webp">
+  
+<!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+<!-- Google fonts -->
+
+
+
+
+<!--My CSS -->
+<link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+
+
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg ">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+        <img src="./assets/images/logos/only-logo.webp" alt="" height="60"  class="me-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="/problem-insperation.html">Problem & insperation</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/map.html">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="members.html">Members</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="SBST-N25.html">SBST-N25</a>
+        </li>
+      </ul>
+      <form class="d-flex" >
+        <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/images/logos/NASA-Logo-Large.webp" alt="" height="60"  class="me-2" >
+        </a>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+
+
+<main>
+
+<section class="members-hero animated-bg">
+  
+</section>
+
+
+<section class="members-sec pt-5 pb-4">
+  <div class="container">
+    <p class="lead">
+      About sharks
+    </p>
+    <p>
+
+      before thinking of a solution we need to explain the problem briefly and what obligated us to build this solution and why even is this problem important.
+    </p>
+
+    <p>
+     Across the world’s oceans, more than 500 species of sharks have lived for millions of years, playing a vital role in keeping marine ecosystems balanced. Sharks regulate the populations of prey species, and without them the entire food web could be disrupted. They also keep prey populations healthy, as many sharks target weak, sick, or injured individuals, which prevents the spread of disease and ensures that only the strongest fish reproduce. In addition, sharks protect important habitats: for example, tiger sharks patrol seagrass beds and prevent herbivores like turtles and dugongs from overgrazing, helping these habitats remain healthy and supporting countless other marine species.</p>
+
+      <p class = "lead">Solutions for predecting sharks</p>
+
+      <p>
+      Since we are dealing with large amounts of data, we decided to train a (ML) machine learning model to deal with this data and detecated our model for a specific month for predecting the probabilty of sharks appearing in a certain region, we can train this model using more data as a future improvment suggession.
+        </p>
+        <p>
+          Due to challenges with insufficient and uncorrelated direct shark data, we utilized available NASA satellite data—specifically Sea-Surface Temperature (SST), Chlorophyll-a, Sea-Surface Salinity (SSS), and Sea-Surface Height (SSH)—to train a machine learning model that establishes a connection between these environmental variables and the probability of shark presence.
+       </p>
+
+
+          <p>
+      We integrated this data into a web page using Leaflet.js to create an interactive heat map, which visualizes areas with varying probabilities of shark presence. The same heat map was also used to display the distribution of each individual feature. Additionally, we leveraged the outputs of our machine learning model to provide probability predictions based on user-inputted feature values.
+            </p>
+
+
+    <p class = "lead">Solutions for protecting sharks </p> 
+
+    <p>
+      Sharks face numerous threats to their survival. Here, we will discuss potential solutions for a selection of these identified dangers.
+      </p>
+      <p>
+      The primary threat to sharks is overfishing and shark finning, where sharks’ fins are removed for consumption, often leaving the still-living body to be discarded back into the ocean. To address this threat, governments should implement measures such as restricting fishing during sharks’ reproduction seasons (which vary by species), establishing protected habitats, and enforcing strict regulations on finning, as it is both wasteful and inhumane.
+        </p>
+        <p>
+      The second significant threat is starvation due to the decline of prey species, often caused by overfishing of smaller fish. To mitigate this, we propose using data from our tracking devices to monitor areas where sharks have not had sufficient food over a given period. In such cases, food could be supplied either from fish shop waste or by introducing fertilized fish eggs into suitable habitats to promote prey growth. This approach relies on aggregated data from multiple sharks, as depending on a single individual could yield inaccurate results and lead to food waste.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pt-4 pb-4">
+    <div class="container">
+        <div class="content d-flex justify-content-between">
+            <div class="left-footer d-flex flex-column gap-3">
+                <a href="index.html">
+                <img src="./assets/images/logos/logo-with-name.webp" alt="" height="80"  class="me-2">
+                </a>
+                <p class="breif">
+                    This project was made possible thanks to the SAPA team 
+                    in NNU,Nablus,Palestine.
+                </p>
+
+                <p class="breif">
+                    This is a prototype model<br>
+                </p>
+            </div>
+            <div class="right-footer text-center d-flex flex-column gap-4 justify-content-center">
+                <h3>
+                    Check out SAPA
+                </h3>
+
+                <div class="logos">
+                    <a href="https://www.facebook.com/share/17PdBnqkwp/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                        <svg height="40"  class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#b0b0b0" d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/sapa_nnu/?igsh=MTVjZ3MxZHA3czl5Ng%3D%3D#" target="_blank" rel="noopener noreferrer">
+                        <svg height="40"  class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#b0b0b0" d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/></svg>
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <svg height="40"  class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#b0b0b0" d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
